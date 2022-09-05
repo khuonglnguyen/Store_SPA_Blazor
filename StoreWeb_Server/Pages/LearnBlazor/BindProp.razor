@@ -1,0 +1,18 @@
+﻿@page "/learnBlazor/bindProp"
+
+<h3>Product</h3>
+Id: @Product.Id
+<br />
+Name: @Product.Name
+<br />
+IsActive: @Product.IsActive
+<br />
+
+@code {
+    StoreWeb.Models.LearnBlazorModels.Demo_Product Product = new()
+        {
+            Id = 1,
+            Name = "Khuong",
+            IsActive = true
+        };
+}
