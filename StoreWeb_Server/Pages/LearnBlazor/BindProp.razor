@@ -7,12 +7,16 @@ Name: @Product.Name
 <br />
 IsActive: @Product.IsActive
 <br />
+Pirce: @Product.Price
+<br />
+Pirce: <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput"/>
 
 @code {
     StoreWeb.Models.LearnBlazorModels.Demo_Product Product = new()
         {
             Id = 1,
             Name = "Khuong",
-            IsActive = true
+            IsActive = true,
+            Price=10.99
         };
 }
